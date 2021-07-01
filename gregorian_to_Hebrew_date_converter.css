@@ -1,0 +1,206 @@
+    .select {
+        width: 140px;
+        padding: 15px;
+        background: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-family: Georgia, serif;
+        border: none;
+    }
+    
+    .select option {
+        padding: 0 35px;
+        border-radius: 15px;
+        font-family: Georgia, serif;
+        background-color: #000D1A;
+        font-size: 18px;
+        font-weight: 600;
+        color: #b5b5b5;
+    }
+    
+    .input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    
+    .input_item {
+        margin: 25px;
+        width: 100px;
+        padding: 16px;
+    }
+    
+    .wrapper {
+        width: 100px;
+        background: #fff;
+        padding: 16px;
+        border-radius: 5px;
+    }
+    
+    .wrapper .input-data {
+        height: 22px;
+        width: 100%;
+        position: relative
+    }
+    
+    .wrapper .input-data input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 17px;
+        border-bottom: 2px solid silver;
+        outline-width: 0px;
+        font-family: Georgia, serif;
+    }
+    
+    .wrapper .input-data label {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        color: grey;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        font-family: Georgia, serif;
+    }
+    
+    .wrapper .input-data .underline {
+        position: absolute;
+        bottom: -4px;
+        height: 2px;
+        width: 100%;
+    }
+    
+    .input-data .underline:before {
+        bottom: 0px;
+        height: 2px;
+        position: absolute;
+        content: "";
+        width: 100%;
+        background: #4158d0;
+        transform: scaleX(0);
+        transition: transform 0.2s ease;
+    }
+    
+    .input-data input:focus~label,
+    .input-data input:valid~label {
+        transform: translateY(-20px);
+        font-size: 15px;
+        color: #4158d0;
+    }
+    
+    .input-data input:focus~.underline:before,
+    .input-data input:valid~.underline:before {
+        transform: scaleX(1);
+    }
+    
+    .body {
+        background: linear-gradient(to right bottom, #648880, #000D1A) no-repeat center center fixed;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .button {
+        max-width: 34%;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        line-height: 16px;
+        padding: 6px;
+        border-radius: 10px;
+        font-family: Georgia, serif;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+        box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+        border: 2px solid rgb(28, 110, 164);
+    }
+    
+    .button:hover {
+        background: #1C6EA4;
+    }
+    
+    .button:active {
+        background: #144E75;
+    }
+    
+    .form-check {
+        padding: 10px;
+        max-width: 200px;
+        padding-left: 50px;
+        justify-content: center;
+        margin: 0 auto;
+        align-content: center;
+    }
+    
+    .form-check-input {
+        height: 18px;
+        width: 18px;
+    }
+    
+    .form-check-label {
+        font-size: 20px;
+        font-family: Georgia, serif;
+        font-weight: 600;
+    }
+    
+    .content {
+        max-width: 500px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .button_container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .hebrew_date {
+        text-align: center;
+        max-width: 300px;
+        justify-content: center;
+        margin: 0 auto;
+        align-content: center;
+        font-size: 30px;
+        color: #fff;
+        font-family: "Alef Hebrew", sans-serif;
+    }
+    
+    .title {
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Monoton', cursive;
+        font-size: 24px;
+        color: #fff;
+        -webkit-animation: h1 8s infinite;
+        animation: h1 8s infinite;
+    }
+    
+    @keyframes h1 {
+        0% {
+            text-shadow: 0 0 3px #FF0000;
+            color: #fff;
+        }
+        25% {
+            text-shadow: 0 0 12px #FF0000;
+        }
+        50% {
+            text-shadow: 0 0 20px #FF0000;
+            color: pink;
+        }
+        75% {
+            text-shadow: 0 0 12px #FF0000;
+        }
+        100% {
+            text-shadow: 0 0 3px #FF0000;
+            color: #fff;
+        }
+    }
